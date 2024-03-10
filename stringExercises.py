@@ -31,3 +31,5 @@ lthree = fruit[3:]
 print(lthree)
 mthree = fruit[3:3]
 print(mthree)
+
+print(fruit[:])
