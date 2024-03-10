@@ -9,3 +9,8 @@ print(len(fruit))
 length = len(fruit)
 last = fruit[length-1]
 print(last)
+
+index = 0
+while index < len(fruit):
+    print(fruit[index])
+    index += 1
