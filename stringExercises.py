@@ -23,3 +23,11 @@ while index > 0:
 s = 'monthy python'
 print(s[0:5])
 print(s[7:13])
+
+fruit = "banana"
+fthree = fruit[:3]
+print(fthree)
+lthree = fruit[3:]
+print(lthree)
+mthree = fruit[3:3]
+print(mthree)
