@@ -44,3 +44,15 @@ for letter in word:
     if letter == 'a':
         count += 1
 print(count)
+
+def count(word, letter):
+    count = 0
+    for wordletter in word:
+        if letter == wordletter:
+            count += 1
+    print(f"The number of '{letter}' in {word} is {count}")
+
+word = input("Enter a word ")
+letter = input("Enter a letter ")
+count(word,letter)
+
