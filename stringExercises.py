@@ -37,3 +37,10 @@ print(fruit[:])
 greeting = 'Hello, world!'
 new_greeting = 'J' + greeting[1:]
 print(new_greeting)
+
+word = 'banana'
+count = 0
+for letter in word:
+    if letter == 'a':
+        count += 1
+print(count)
