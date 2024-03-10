@@ -19,3 +19,7 @@ index = len(fruit)
 while index > 0:
     print(fruit[index-1])
     index -= 1
+
+s = 'monthy python'
+print(s[0:5])
+print(s[7:13])
