@@ -61,3 +61,12 @@ print('seed' in 'banana')
 
 if word == 'banana':
     print('All right, banana.')
+
+word = 'Pineapple'
+
+if word < 'banana':
+    print(f'Your word, {word}, comes before banana')
+elif word > 'banana':
+    print(f'Your word, {word}, comes after banana')
+else:
+    print('All right, banana.')   
