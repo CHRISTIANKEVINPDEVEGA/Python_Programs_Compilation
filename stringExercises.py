@@ -79,3 +79,24 @@ print(help(str.capitalize))
 word = 'banana'
 new_word = word.upper()
 print(new_word)
+
+word = 'banana'
+index = word.find('a')
+print(index)
+
+index = word.find('na')
+print(index)
+
+index = word.find('na', 3)
+print(index)
+
+def friend(fr1 = None,fr2 = None):
+    if fr1 != None:
+        print(fr1)
+    if fr2 != None:
+        print(fr2)
+    else:
+        print(fr1)
+        print(fr2)
+
+friend('loe','lenlen')
