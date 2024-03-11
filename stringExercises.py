@@ -52,7 +52,9 @@ def count(word, letter):
             count += 1
     print(f"The number of '{letter}' in {word} is {count}")
 
-word = input("Enter a word ")
-letter = input("Enter a letter ")
-count(word,letter)
-
+# word = input("Enter a word ")
+# letter = input("Enter a letter ")
+# count(word,letter)
+    
+print('a' in 'banana')
+print('seed' in 'banana')
