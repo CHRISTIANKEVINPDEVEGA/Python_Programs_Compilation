@@ -110,3 +110,6 @@ bool = line.startswith('Have')
 print(bool)
 bool = line.startswith('h')
 print(bool)
+
+bool = line.lower().startswith('h')
+print(bool)
