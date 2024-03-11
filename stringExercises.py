@@ -70,3 +70,8 @@ elif word > 'banana':
     print(f'Your word, {word}, comes after banana')
 else:
     print('All right, banana.')   
+
+stuff = 'Hello World'
+print(type(stuff))
+print(dir(stuff))
+print(help(str.capitalize))
