@@ -123,3 +123,9 @@ second_position = sender.find(' ',postion_first)
 
 strip_sender = sender[postion_first+1:second_position]
 print(strip_sender)
+
+str = 'X-DSPAM-Confidence: 0.8475'
+colpos = str.find(':')
+numb = str[colpos+1:].strip()
+floatnumb = float(numb)
+print(floatnumb)
