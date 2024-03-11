@@ -104,3 +104,9 @@ friend('loe','lenlen')
 line = '  here we go'
 new_line = line.strip()
 print(new_line)
+
+line = 'Have a nice day'
+bool = line.startswith('Have')
+print(bool)
+bool = line.startswith('h')
+print(bool)
