@@ -116,3 +116,10 @@ print(bool)
 
 count ='banana'.count('a',0)
 print(count)
+
+sender = 'From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
+postion_first = sender.find('@')
+second_position = sender.find(' ',postion_first)
+
+strip_sender = sender[postion_first+1:second_position]
+print(strip_sender)
