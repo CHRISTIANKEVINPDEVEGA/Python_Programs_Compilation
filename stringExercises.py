@@ -113,3 +113,6 @@ print(bool)
 
 bool = line.lower().startswith('h')
 print(bool)
+
+count ='banana'.count('a',0)
+print(count)
