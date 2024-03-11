@@ -58,3 +58,6 @@ def count(word, letter):
     
 print('a' in 'banana')
 print('seed' in 'banana')
+
+if word == 'banana':
+    print('All right, banana.')
