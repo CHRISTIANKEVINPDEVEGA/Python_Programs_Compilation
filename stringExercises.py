@@ -75,3 +75,7 @@ stuff = 'Hello World'
 print(type(stuff))
 print(dir(stuff))
 print(help(str.capitalize))
+
+word = 'banana'
+new_word = word.upper()
+print(new_word)
