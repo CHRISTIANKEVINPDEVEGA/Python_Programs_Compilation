@@ -100,3 +100,7 @@ def friend(fr1 = None,fr2 = None):
         print(fr2)
 
 friend('loe','lenlen')
+
+line = '  here we go'
+new_line = line.strip()
+print(new_line)
