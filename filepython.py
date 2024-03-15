@@ -38,3 +38,10 @@ for line in fhand:
     if not line.startswith("From:"):
         continue
     print(line)
+
+fhand = open('word.txt')
+for line in fhand:
+    line = line.rstrip()
+    if line.find('@uct.ac.za') == -1:
+        continue
+    print(line)
