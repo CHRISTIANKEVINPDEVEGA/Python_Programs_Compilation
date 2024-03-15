@@ -8,3 +8,16 @@ line2 = 'this is rain rain'
 print(fout.write(line2))
 
 fout.close()
+
+# Exercise one
+input = input('Enter a filename: ')
+
+try:
+    uphand = open(input)
+except:
+    print('Invalid name')
+    exit()
+
+for line in uphand:
+    print(line.upper())
+
