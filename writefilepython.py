@@ -10,37 +10,56 @@ print(fout.write(line2))
 fout.close()
 
 # Exercise 1
-input = input('Enter a filename: ')
+# input = input('Enter a filename: ')
 
-try:
-    uphand = open(input)
-except:
-    print('Invalid name')
-    exit()
+# try:
+#     uphand = open(input)
+# except:
+#     print('Invalid name')
+#     exit()
 
-for line in uphand:
-    print(line.upper().rstrip())
+# for line in uphand:
+#     print(line.upper().rstrip())
 
 
 # Exercise 2
 
-input2 = input('Enter a filename: ')
+# input2 = input('Enter a filename: ')
 
+# try:
+#     uphand2 = open(input2)
+# except:
+#     print('Invalid name')
+#     exit()
+
+# count = 0
+# floatcount = 0
+
+# for line in uphand2:
+#     if line.startswith('X-DSPAM-Confidence:'):
+#         count += 1
+#         icolon = line.find(':')
+#         floatval = float(line[(icolon+1):])
+#         floatcount += floatval
+
+# floatavg = floatcount/count
+# print('Average spam confidence: ', floatavg)
+
+# Exercise 3
+
+fname = input("Enter a  filename: ")
 try:
-    uphand2 = open(input2)
+    fhand3 = open(fname)
+
 except:
-    print('Invalid name')
+    if fname == 'na na boo boo':
+        print("NA NA BOO BOO TO YOU - You have been punk'd!")
+    else:
+        print('Filename', fname,  'cannot be found')
     exit()
 
 count = 0
-floatcount = 0
-
-for line in uphand2:
-    if line.startswith('X-DSPAM-Confidence:'):
+for line in fhand3:
+    if line.startswith('Subject: '):
         count += 1
-        icolon = line.find(':')
-        floatval = float(line[(icolon+1):])
-        floatcount += floatval
-
-floatavg = floatcount/count
-print('Average spam confidence: ', floatavg)
+print('There were', count, 'Subject lines in ', fname)
