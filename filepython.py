@@ -47,9 +47,16 @@ for line in fhand:
     print(line)
 
 fname = input("Enter a  filename: ")
-fhand = open(fname)
+try:
+    fhands = open(fname)
+
+except:
+    print('Filename', fname,  'cannot be found')
+    exit()
+
 count = 0
-for line in fhand:
+for line in fhands:
     if line.startswith('Subject: '):
         count += 1
 print('There were', count, 'Subject lines in ', fname)
+
