@@ -26,3 +26,8 @@ fhand = open('word.txt')
 inp = fhand.read()
 print(len(inp))
 print(inp[:20])
+
+fhand = open('word.txt')
+for line in fhand:
+    if line.startswith("From"):
+        print(line.rstrip())
