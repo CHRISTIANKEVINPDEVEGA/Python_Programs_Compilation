@@ -4,3 +4,25 @@ print(fhand)
 stuff = 'Hello\nWorld'
 print(stuff)
 print(len(stuff))
+
+fhand = open('word.txt')
+count = 0
+for line in fhand:
+    count = count + 1
+
+print(count) 
+
+fhand = open('word.txt')
+
+count = 0
+
+for line in fhand:
+    print(line.strip())
+    count += 1 
+    if count == 2:
+        break    
+
+fhand = open('word.txt')
+inp = fhand.read()
+print(len(inp))
+print(inp[:20])
