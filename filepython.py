@@ -45,3 +45,11 @@ for line in fhand:
     if line.find('@uct.ac.za') == -1:
         continue
     print(line)
+
+fname = input("Enter a  filename: ")
+fhand = open(fname)
+count = 0
+for line in fhand:
+    if line.startswith('Subject: '):
+        count += 1
+print('There were', count, 'Subject lines in ', fname)
