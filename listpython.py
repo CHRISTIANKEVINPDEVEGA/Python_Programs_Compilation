@@ -67,3 +67,6 @@ print(t)
 t =  ['a', 'b', 'c', 'd', 'e', 'f']
 del t[1:3]
 print(t)
+
+nums = [3, 41, 12, 9, 74, 15]
+print(max(nums))
