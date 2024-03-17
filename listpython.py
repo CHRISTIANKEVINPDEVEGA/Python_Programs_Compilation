@@ -18,3 +18,14 @@ cheese[1] = 'Eden'
 print(cheese)
 
 print('Eden' in cheese)
+
+for cheeses in cheese:
+    print(cheeses)
+
+for i in range(len(numbers)):
+    numbers[i] = numbers[i] * 2
+
+print(numbers)
+
+for x in empty:
+    print('this never happened')
