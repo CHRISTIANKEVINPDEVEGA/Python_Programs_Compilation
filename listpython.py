@@ -82,3 +82,17 @@ while(True):
 average = sum(nums) / len(nums)
 print('Average: ', average)
 
+s = 'spam'
+lists= list(s)
+print(lists)
+
+liststr = 'i want to go home'
+newlist=liststr.split()
+print(newlist)
+
+listspam = 'spam-spam-spam'
+delimiter = '-'
+newspamlist = listspam.split(delimiter)
+print(newspamlist)
+newspamstr = delimiter.join(newspamlist)
+print(newspamstr)
