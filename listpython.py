@@ -70,3 +70,15 @@ print(t)
 
 nums = [3, 41, 12, 9, 74, 15]
 print(max(nums))
+
+nums = []
+
+while(True):
+    inp = input('Enter a value: ')
+    if inp == 'done': break
+    value = float(inp)
+    nums.append(value)
+
+average = sum(nums) / len(nums)
+print('Average: ', average)
+
