@@ -41,3 +41,16 @@ t = ['a', 'b', 'c', 'd', 'f', 'g']
 print(t[:1])
 t[1:4] = ['j', 'k']
 print(t)
+
+t = ['a','b','c']
+t.append('d')
+print(t)
+
+t1 =['a','b','c']
+t2 = ['d', 'e', 'f']
+t1.extend(t2)
+print(t1)
+
+t = ['a','c','d','b']
+t.sort()
+print(t)
