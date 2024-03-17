@@ -10,3 +10,11 @@ numbers = [0,1,2,3,4]
 empty = []
 
 print(cheese,numbers,empty)
+
+print(cheese[0])
+
+cheese[1] = 'Eden'
+
+print(cheese)
+
+print('Eden' in cheese)
