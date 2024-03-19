@@ -73,37 +73,57 @@ print(max(nums))
 
 nums = []
 
-while(True):
-    inp = input('Enter a value: ')
-    if inp == 'done': break
-    value = float(inp)
-    nums.append(value)
+# while(True):
+#     inp = input('Enter a value: ')
+#     if inp == 'done': break
+#     value = float(inp)
+#     nums.append(value)
 
-average = sum(nums) / len(nums)
-print('Average: ', average)
+# average = sum(nums) / len(nums)
+# print('Average: ', average)
 
-s = 'spam'
-lists= list(s)
-print(lists)
+# s = 'spam'
+# lists= list(s)
+# print(lists)
 
-liststr = 'i want to go home'
-newlist=liststr.split()
-print(newlist)
+# liststr = 'i want to go home'
+# newlist=liststr.split()
+# print(newlist)
 
-listspam = 'spam-spam-spam'
-delimiter = '-'
-newspamlist = listspam.split(delimiter)
-print(newspamlist)
-newspamstr = delimiter.join(newspamlist)
-print(newspamstr)
+# listspam = 'spam-spam-spam'
+# delimiter = '-'
+# newspamlist = listspam.split(delimiter)
+# print(newspamlist)
+# newspamstr = delimiter.join(newspamlist)
+# print(newspamstr)
 
-fhand = open('word.txt')
+# fhand = open('word.txt')
 
-for line in fhand:
-    line = line.rstrip()
-    if not line.startswith('From '):
-        continue
-    linesplitted = line.split()
-    print(linesplitted)
+# for line in fhand:
+#     line = line.rstrip()
+#     if not line.startswith('From '):
+#         continue
+#     linesplitted = line.split()
+#     print(linesplitted)
+
+def delete_head(t):
+    del t[0]
+
+letters = ['a','b','c']
+delete_head(letters)
+print(letters)
+
+t1 = [1,2]
+t2 = t1.append(3)
+print(t1)
+print(t2)
 
 
+t1 = [1,2]
+t2 = t1 + [3]
+print(t1 is t2)
+
+def tail(t):
+    return t[1:]
+
+print(tail(t2))
