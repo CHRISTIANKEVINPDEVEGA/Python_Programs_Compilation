@@ -127,3 +127,13 @@ def tail(t):
     return t[1:]
 
 print(tail(t2))
+
+def chop(listvar):
+    lenght_of_list = len(listvar)
+    del listvar[(lenght_of_list-1)]
+    del listvar[0]
+    
+
+car = ['Tesla', 'Suzuki', 'Kawasaki', 'Porche','Ferrari']
+chop(car)
+print(car)
