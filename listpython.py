@@ -96,3 +96,14 @@ newspamlist = listspam.split(delimiter)
 print(newspamlist)
 newspamstr = delimiter.join(newspamlist)
 print(newspamstr)
+
+fhand = open('word.txt')
+
+for line in fhand:
+    line = line.rstrip()
+    if not line.startswith('From '):
+        continue
+    linesplitted = line.split()
+    print(linesplitted)
+
+
