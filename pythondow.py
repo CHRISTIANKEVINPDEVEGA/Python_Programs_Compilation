@@ -26,3 +26,11 @@ for line in fhand:
         emailmesCount[linelst[1]] = 1
 
 print(emailmesCount)
+
+
+maxVal = None
+for keys in emailmesCount:
+    if maxVal is None or emailmesCount[maxVal] <= emailmesCount[keys]:
+        maxVal = keys
+
+print(maxVal,emailmesCount[maxVal])
