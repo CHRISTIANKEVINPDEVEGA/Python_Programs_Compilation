@@ -35,12 +35,18 @@ for keys in emailmesCount:
 
 print(maxVal,emailmesCount[maxVal])
 
-
+domainnameCount = dict()
 fhand = open('word.txt')
 for line in fhand:
     line = line.rstrip()
     if not line.startswith('From '):
         continue
-    at_index = line[1].find('@')
-    domainname = line[1][(at_index+1):]
+    at_index = line.find('@')
+    at_space = line.find(" ",at_index)
+    domainname = line[(at_index+1):at_space]
+    if domainname in domainnameCount:
+        domainnameCount[domainname] += 1
+    else:
+        domainnameCount[domainname] = 1
 
+print(domainnameCount)
