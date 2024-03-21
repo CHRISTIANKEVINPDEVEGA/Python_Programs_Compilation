@@ -25,6 +25,15 @@
 #             print("Invalid, Please Enter a number")
 #             continue
 
+def parcelist(numList):
+    if len(numList) == 0:
+        print('No input')
+    else:
+        list(numList)
+        maxnum = max(numList)
+        minnum = min(numList)
+        print(f'Maximum: { maxnum}')
+        print(f'Minimum: { minnum}')
 
 storeCount = []
 while True:
@@ -35,6 +44,7 @@ while True:
         continue
     except:
         if numVal == 'done':
+            parcelist(storeCount)
             break
         else:
             print('Invalid input')
