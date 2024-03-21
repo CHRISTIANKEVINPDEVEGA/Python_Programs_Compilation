@@ -36,3 +36,30 @@ for letter in word:
         dic[letter] += 1
 
 print(dic)
+print(dic.get('b',0))
+print(dic.get('z',0))
+
+word = 'brontosaurus'
+dic = dict()
+for letter in word:
+    dic[letter]=dic.get(letter,0) + 1
+
+print(dic)
+print(dic.get('z',6))
+
+fname = input('Enter the file name: ')
+try:
+    fhand = open(fname)
+except:
+    print('File cannot be opened: ', fname)
+    exit()
+
+counts = dict()
+for line in fhand:
+    words = line.split()
+    for word in words:
+        if word not in counts:
+            counts[word] = 1
+        else:
+            counts[word] += 1
+print(counts)
