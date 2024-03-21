@@ -25,3 +25,14 @@ for line in linestxt:
             dict_wordtxt[word] = len(word)
 
 print(dict_wordtxt)
+
+word = 'brontosaurus'
+dic = dict()
+for letter in word:
+    if len(dic) == 0 or letter not in dic:
+        dic[letter] = 1
+        continue
+    elif letter in dic:
+        dic[letter] += 1
+
+print(dic)
