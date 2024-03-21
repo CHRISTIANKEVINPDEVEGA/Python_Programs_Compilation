@@ -17,7 +17,7 @@ emailmesCount = dict()
 fhand = open('word.txt')
 for line in fhand:
     line = line.rstrip()
-    if not line.startswith('From: '):
+    if not line.startswith('From '):
         continue 
     linelst = line.split()
     if linelst[1] in emailmesCount:
@@ -34,3 +34,13 @@ for keys in emailmesCount:
         maxVal = keys
 
 print(maxVal,emailmesCount[maxVal])
+
+
+fhand = open('word.txt')
+for line in fhand:
+    line = line.rstrip()
+    if not line.startswith('From '):
+        continue
+    at_index = line[1].find('@')
+    domainname = line[1][(at_index+1):]
+
