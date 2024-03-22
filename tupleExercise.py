@@ -56,3 +56,26 @@ for key, val in d.items():
 l.sort(reverse=True)
 
 print(l)
+
+
+import string
+wordsCount = {}
+punc = string.punctuation
+fhand = open('romeo.txt')
+for line in fhand:
+    line = line.translate(str.maketrans("","",punc))
+    line = line.lower()
+    linelst = line.split()
+    for word in linelst:
+        if word not in wordsCount:
+            wordsCount[word] = 1
+        if word in wordsCount:
+            wordsCount[word] += 1 
+lsts = list()
+for key, val in wordsCount.items():
+    lsts.append((val,key))
+
+lsts.sort(reverse=True)
+
+for key, val in lsts[:10]:
+    print(key,val)
