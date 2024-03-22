@@ -32,3 +32,8 @@ print(y)
 a, b = (1, 2), 3
 print(a)
 print(b)
+
+addr = 'monty@python.org'
+uname, domain = addr.split("@")
+print(uname)
+print(domain)
