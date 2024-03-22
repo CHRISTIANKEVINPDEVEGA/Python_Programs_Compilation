@@ -21,3 +21,14 @@ for length, word in t:
     res.append(word)
 
 print(res)
+
+m = ('have','Fun')
+x,y = m
+print(x)
+print(y)
+x,y=y,x
+print(x)
+print(y)
+a, b = (1, 2), 3
+print(a)
+print(b)
